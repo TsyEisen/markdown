@@ -22,3 +22,7 @@
 
 ### <>尖括号被转译的解决：
  #template.config('escape', false);
+
+###修改css样式，引入markdown的css样式，参考案例
+
+###高亮显示参考highlight.js
