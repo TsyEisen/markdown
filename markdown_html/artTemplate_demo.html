@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    
+ 
+    <script type='text/template' id='tpl'>
+			
+			<div>
+			<h1><%= title %></h1>
+    	<ul>
+    		<% arr.forEach(function(item){ %>
+				<li><%= item.name %></li>
+			<% })%>
+    	</ul>
+    </div>
+		
+    </script>
+  
+    <script src="./node_modules/art-template/dist/template-native.js"></script>
+    <script>
+var templateStr = document.getElementById('tpl').innerHTML;
+console.log(templateStr);
+    var render = template.compile(templateStr);
+    console.log(render);
+    var htmlStr = render({
+    title:"artTemplate模板",
+    arr:[
+    {name:'zs'},
+    {name:18},
+    {name:'女'}
+    ]
+    })
+    document.body.innerHTML = htmlStr;
+    </script>
+    
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>markdown文件转换为html文件</title>
+    </head>
+    <body>
+    <h3>markdown转换成html网址https://github.com/evilstreak/markdown-js</h3>
+
+<pre><code>#确保node npm 已安装
+#初始化 npm init 
+#项目目录下安装 npm install markdown --save</code></pre>
+
+<h3>把生成的html文件浏览器打开，可以看到页面结构</h3>
+
+<p>   #若出现乱码，原因是没有设置meta标签，把内容放到body中即可
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;markdown转换成html&lt;/title&gt;
+&lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</p>
+
+<h3>解决上一步骤手动生成html结构的问题，使用模板引擎artTemplate</h3>
+
+<h3>安装art-template</h3>
+
+<pre><code>#npm install art-template --save</code></pre>
+
+<h3>&lt;&gt;尖括号被转译的解决：</h3>
+
+<p> #template.config(&#39;escape&#39;, false);</p>
+    </body>
+</html>
